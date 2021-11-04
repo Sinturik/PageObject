@@ -73,6 +73,10 @@ public class TestForm {
         //проверка
         $("[id=example-modal-sizes-title-lg]").shouldHave(text("Thanks for submitting the form"));
 
+        //проверка личных данных в таблице
+        $(".table-responsive").shouldHave(text("Kot Kotov"));
+        $(".table-responsive").shouldHave(text("kot@gmail.com"));
+
      }
 
 
